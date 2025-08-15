@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polityka prywatności</title>
+  <style>
+    body {font-family: "Arial", sans-serif;max-width: 800px;margin: auto;padding: 2em;line-height: 1.6;background-color: #f9f9f9;}
+    h1, h2 {color: #333;}
+    a {color: #0066cc;}
+    img.email-image {display: block;margin: 1em 0;max-width: 50%;height: auto;object-fit: contain;}
+    .copy-btn {background-color: #0066cc;color: #fff;padding: 0.5em 1em;border: none;cursor: pointer;border-radius: 4px;font-size: 0.9em;}
+    .copy-btn:active {background-color: #004999;}
+  </style>
+</head>
+<body>
+  <h1>Polityka prywatności</h1>
+
+  <p>Aplikacja "PacketLoss &amp; SpeedScan" może zbierać i wykorzystywać określone informacje w celu poprawy doświadczenia użytkownika oraz wyświetlania reklam.</p>
+
+  <h2>1. Zbierane informacje</h2>
+  <ul>
+    <li>Dane dotyczące korzystania z aplikacji (liczba uruchomień, logi błędów itp.)</li>
+    <li>Adres IP (wyświetlany wyłącznie do celów diagnostycznych i przechowywany tylko na urządzeniu)</li>
+    <li>Identyfikator reklamowy (IDFA)</li>
+  </ul>
+
+  <h2>2. Cel wykorzystania</h2>
+  <ul>
+    <li>Analiza i prezentacja jakości połączenia</li>
+    <li>Wyświetlanie reklam (za pomocą Google AdMob)</li>
+    <li>Analiza awarii i problemów technicznych</li>
+  </ul>
+
+  <h2>3. Przekazywanie informacji podmiotom zewnętrznym</h2>
+  <p>Aplikacja korzysta z następujących usług zewnętrznych:</p>
+  <ul>
+    <li>Google AdMob (reklamy)</li>
+    <li>Cloudflare (diagnostyka prędkości)</li>
+  </ul>
+
+  <h2>4. Zezwolenie na śledzenie</h2>
+  <p>Podczas uruchamiania aplikacji może pojawić się okno dialogowe proszące o zgodę na śledzenie w celu wyświetlania reklam. Bez zgody reklamy spersonalizowane nie będą wyświetlane.</p>
+
+  <h2>5. Kontakt</h2>
+  <p>W przypadku pytań prosimy skorzystać z poniższego formularza:</p>
+  <p><a href="https://forms.gle/yrWqyzYeEUcYBPKVA">Formularz kontaktowy</a></p>
+  <p>W sprawach dotyczących prywatności prosimy o kontakt na poniższy adres e-mail:</p>
+  <img src="images/img1.png" alt="Obraz adresu e-mail" class="email-image" />
+  <p>Ostatnia aktualizacja: 31 lipca 2025</p>
+
+  <button class="copy-btn" onclick="copyPolicy()">Kopiuj treść polityki</button>
+
+  <script>
+    function copyPolicy() {
+      const text = document.body.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Polityka prywatności została skopiowana!");
+      }).catch(err => {
+        alert("Nie udało się skopiować: " + err);
+      });
+    }
+  </script>
+</body>
+</html>

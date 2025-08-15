@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacybeleid</title>
+  <style>
+    body {font-family: "Arial", sans-serif;max-width: 800px;margin: auto;padding: 2em;line-height: 1.6;background-color: #f9f9f9;}
+    h1, h2 {color: #333;}
+    a {color: #0066cc;}
+    img.email-image {display: block;margin: 1em 0;max-width: 50%;height: auto;object-fit: contain;}
+    .copy-btn {background-color: #0066cc;color: #fff;padding: 0.5em 1em;border: none;cursor: pointer;border-radius: 4px;font-size: 0.9em;}
+    .copy-btn:active {background-color: #004999;}
+  </style>
+</head>
+<body>
+  <h1>Privacybeleid</h1>
+
+  <p>De app "PacketLoss &amp; SpeedScan" kan bepaalde informatie verzamelen en gebruiken om de gebruikerservaring te verbeteren en advertenties te tonen.</p>
+
+  <h2>1. Verzamelde informatie</h2>
+  <ul>
+    <li>App-gebruiksgegevens (aantal starts, foutlogboeken, enz.)</li>
+    <li>IP-adres (alleen getoond voor diagnostiek en alleen opgeslagen op het apparaat)</li>
+    <li>Advertentie-ID (IDFA)</li>
+  </ul>
+
+  <h2>2. Doeleinden van gebruik</h2>
+  <ul>
+    <li>Analyseren en tonen van communicatiekwaliteit</li>
+    <li>Tonen van advertenties (via Google AdMob)</li>
+    <li>Analyseren van crashes en technische problemen</li>
+  </ul>
+
+  <h2>3. Externe doorgifte van informatie</h2>
+  <p>Deze app maakt gebruik van de volgende externe diensten:</p>
+  <ul>
+    <li>Google AdMob (advertenties)</li>
+    <li>Cloudflare (snelheidsdiagnostiek)</li>
+  </ul>
+
+  <h2>4. Toestemming voor tracking</h2>
+  <p>Bij het starten van de app kan een pop-up voor trackingtoestemming verschijnen om advertenties weer te geven. Zonder toestemming worden geen gepersonaliseerde advertenties getoond.</p>
+
+  <h2>5. Contact</h2>
+  <p>Voor vragen kunt u het onderstaande formulier gebruiken:</p>
+  <p><a href="https://forms.gle/yrWqyzYeEUcYBPKVA">Contactformulier</a></p>
+  <p>Voor privacy-gerelateerde vragen kunt u contact opnemen via het onderstaande e-mailadres:</p>
+  <img src="images/img1.png" alt="Afbeelding van e-mailadres" class="email-image" />
+  <p>Laatst bijgewerkt: 31 juli 2025</p>
+
+  <button class="copy-btn" onclick="copyPolicy()">Kopieer beleidstekst</button>
+
+  <script>
+    function copyPolicy() {
+      const text = document.body.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Privacybeleid gekopieerd naar klembord!");
+      }).catch(err => {
+        alert("Kopiëren mislukt: " + err);
+      });
+    }
+  </script>
+</body>
+</html>

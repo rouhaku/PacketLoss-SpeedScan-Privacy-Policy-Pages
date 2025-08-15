@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privatlivspolitik</title>
+  <style>
+    body {font-family: "Arial", sans-serif;max-width: 800px;margin: auto;padding: 2em;line-height: 1.6;background-color: #f9f9f9;}
+    h1, h2 {color: #333;}
+    a {color: #0066cc;}
+    img.email-image {display: block;margin: 1em 0;max-width: 50%;height: auto;object-fit: contain;}
+    .copy-btn {background-color: #0066cc;color: #fff;padding: 0.5em 1em;border: none;cursor: pointer;border-radius: 4px;font-size: 0.9em;}
+    .copy-btn:active {background-color: #004999;}
+  </style>
+</head>
+<body>
+  <h1>Privatlivspolitik</h1>
+
+  <p>Denne app, "PacketLoss &amp; SpeedScan", kan indsamle og bruge visse oplysninger til følgende formål for at forbedre brugeroplevelsen og vise annoncer.</p>
+
+  <h2>1. Indsamlede oplysninger</h2>
+  <ul>
+    <li>App-brugsdata (antal opstart, fejllogfiler osv.)</li>
+    <li>IP-adresse (vises kun til diagnostiske formål og gemmes kun på enheden)</li>
+    <li>Reklame-id (IDFA)</li>
+  </ul>
+
+  <h2>2. Formål med brug</h2>
+  <ul>
+    <li>Analysere og vise kommunikationskvalitet</li>
+    <li>Vise annoncer (ved hjælp af Google AdMob)</li>
+    <li>Analysere nedbrud og andre problemer</li>
+  </ul>
+
+  <h2>3. Ekstern transmission af oplysninger</h2>
+  <p>Denne app bruger følgende eksterne tjenester:</p>
+  <ul>
+    <li>Google AdMob (annoncering)</li>
+    <li>Cloudflare (hastighedsdiagnostik)</li>
+  </ul>
+
+  <h2>4. Sporings­tilladelse</h2>
+  <p>For at vise annoncer kan en pop op for sporingstilladelse vises ved appens start. Medmindre brugeren giver tilladelse, vises der ikke personlige annoncer.</p>
+
+  <h2>5. Kontakt</h2>
+  <p>For henvendelser, brug venligst følgende formular:</p>
+  <p><a href="https://forms.gle/yrWqyzYeEUcYBPKVA">Kontaktformular</a></p>
+  <p>For henvendelser om privatlivets fred, kontakt os venligst på e-mailadressen nedenfor:</p>
+  <img src="images/img1.png" alt="Emailadresse billede" class="email-image" />
+  <p>Sidst opdateret: 31. juli 2025</p>
+
+  <button class="copy-btn" onclick="copyPolicy()">Kopiér politiktekst</button>
+
+  <script>
+    function copyPolicy() {
+      const text = document.body.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Privatlivspolitik kopieret til udklipsholder!");
+      }).catch(err => {
+        alert("Kunne ikke kopiere: " + err);
+      });
+    }
+  </script>
+</body>
+</html>
