@@ -27,10 +27,29 @@
       "bn": "privacy-bn.html",
       "hi": "privacy-hi.html",
       "tr": "privacy-tr.html",
-      "ar": "privacy-ar.html"
+      "ar": "privacy-ar.html",
+
+      "da": "privacy-ru-da.html",
+      "en-AU": "privacy-ru-en-AU.html",
+      "en-CA": "privacy-ru-en-CA.html",
+      "en-GB": "privacy-ru-en-GB.html",
+      "fi": "privacy-ru-fi.html",
+      "he": "privacy-ru-he.html",
+      "id": "privacy-ru-id.html",
+      "nb": "privacy-ru-nb.html",
+      "nl": "privacy-ru-nl.html",
+      "pl": "privacy-ru-pl.html",
+      "pt-BR-ru": "privacy-ru-pt-BR.html",
+      "privacy-ru-pt-BR": "privacy-ru-pt-BR.html",
+      "pt-BR": "privacy-ru-pt-BR.html",
+      "sv": "privacy-ru-sv.html"
     };
 
-    const target = redirectMap[lang] || redirectMap[lang.slice(0, 2)] || "privacy-en.html";
+    const target =
+      redirectMap[lang] ||
+      redirectMap[lang.slice(0, 2)] ||
+      "privacy-en.html";
+
     window.location.href = target;
   </script>
 </head>
