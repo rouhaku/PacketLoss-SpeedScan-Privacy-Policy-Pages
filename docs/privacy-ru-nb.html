@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personvernerklæring</title>
+  <style>
+    body {font-family: "Arial", sans-serif;max-width: 800px;margin: auto;padding: 2em;line-height: 1.6;background-color: #f9f9f9;}
+    h1, h2 {color: #333;}
+    a {color: #0066cc;}
+    img.email-image {display: block;margin: 1em 0;max-width: 50%;height: auto;object-fit: contain;}
+    .copy-btn {background-color: #0066cc;color: #fff;padding: 0.5em 1em;border: none;cursor: pointer;border-radius: 4px;font-size: 0.9em;}
+    .copy-btn:active {background-color: #004999;}
+  </style>
+</head>
+<body>
+  <h1>Personvernerklæring</h1>
+
+  <p>Appen "PacketLoss &amp; SpeedScan" kan samle inn og bruke visse opplysninger for å forbedre brukeropplevelsen og vise annonser.</p>
+
+  <h2>1. Informasjon som samles inn</h2>
+  <ul>
+    <li>Bruksdata for appen (antall oppstarter, feillogger osv.)</li>
+    <li>IP-adresse (vises kun for diagnostikk og lagres kun på enheten)</li>
+    <li>Reklameidentifikator (IDFA)</li>
+  </ul>
+
+  <h2>2. Formål med bruk</h2>
+  <ul>
+    <li>Analysere og vise kommunikasjonskvalitet</li>
+    <li>Vise annonser (ved bruk av Google AdMob)</li>
+    <li>Analysere krasj og tekniske problemer</li>
+  </ul>
+
+  <h2>3. Overføring av informasjon til eksterne parter</h2>
+  <p>Denne appen bruker følgende eksterne tjenester:</p>
+  <ul>
+    <li>Google AdMob (annonsering)</li>
+    <li>Cloudflare (hastighetsdiagnostikk)</li>
+  </ul>
+
+  <h2>4. Sporings­tillatelse</h2>
+  <p>Ved oppstart kan det vises en forespørsel om sporingstillatelse for å vise annonser. Uten tillatelse vil ikke personlige annonser bli vist.</p>
+
+  <h2>5. Kontakt</h2>
+  <p>For henvendelser, bruk skjemaet nedenfor:</p>
+  <p><a href="https://forms.gle/yrWqyzYeEUcYBPKVA">Henvendelsesskjema</a></p>
+  <p>For personvernrelaterte spørsmål, kontakt oss på e-postadressen under:</p>
+  <img src="images/img1.png" alt="E-postadressebilde" class="email-image" />
+  <p>Sist oppdatert: 31. juli 2025</p>
+
+  <button class="copy-btn" onclick="copyPolicy()">Kopier retningslinjetekst</button>
+
+  <script>
+    function copyPolicy() {
+      const text = document.body.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Personvernerklæringen er kopiert!");
+      }).catch(err => {
+        alert("Kunne ikke kopiere: " + err);
+      });
+    }
+  </script>
+</body>
+</html>

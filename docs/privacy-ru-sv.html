@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sekretesspolicy</title>
+  <style>
+    body {font-family: "Arial", sans-serif;max-width: 800px;margin: auto;padding: 2em;line-height: 1.6;background-color: #f9f9f9;}
+    h1, h2 {color: #333;}
+    a {color: #0066cc;}
+    img.email-image {display: block;margin: 1em 0;max-width: 50%;height: auto;object-fit: contain;}
+    .copy-btn {background-color: #0066cc;color: #fff;padding: 0.5em 1em;border: none;cursor: pointer;border-radius: 4px;font-size: 0.9em;}
+    .copy-btn:active {background-color: #004999;}
+  </style>
+</head>
+<body>
+  <h1>Sekretesspolicy</h1>
+
+  <p>Appen "PacketLoss &amp; SpeedScan" kan samla in och använda viss information för att förbättra användarupplevelsen och visa annonser.</p>
+
+  <h2>1. Information som samlas in</h2>
+  <ul>
+    <li>Appanvändningsdata (antal starter, felloggar etc.)</li>
+    <li>IP-adress (visas endast för diagnostik och lagras endast på enheten)</li>
+    <li>Annonsidentifierare (IDFA)</li>
+  </ul>
+
+  <h2>2. Syfte med användning</h2>
+  <ul>
+    <li>Analysera och visa kommunikationskvalitet</li>
+    <li>Visa annonser (via Google AdMob)</li>
+    <li>Analysera krascher och tekniska problem</li>
+  </ul>
+
+  <h2>3. Överföring av information till tredje part</h2>
+  <p>Denna app använder följande externa tjänster:</p>
+  <ul>
+    <li>Google AdMob (annonsering)</li>
+    <li>Cloudflare (hastighetsdiagnostik)</li>
+  </ul>
+
+  <h2>4. Spårningstillstånd</h2>
+  <p>Vid appstart kan en popup-begäran om spårningstillstånd visas för att visa annonser. Utan tillstånd visas inga personliga annonser.</p>
+
+  <h2>5. Kontakt</h2>
+  <p>För frågor, använd formuläret nedan:</p>
+  <p><a href="https://forms.gle/yrWqyzYeEUcYBPKVA">Kontaktformulär</a></p>
+  <p>För sekretessrelaterade ärenden, kontakta oss på e-postadressen nedan:</p>
+  <img src="images/img1.png" alt="Bild på e-postadress" class="email-image" />
+  <p>Senast uppdaterad: 31 juli 2025</p>
+
+  <button class="copy-btn" onclick="copyPolicy()">Kopiera policytext</button>
+
+  <script>
+    function copyPolicy() {
+      const text = document.body.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Sekretesspolicyn har kopierats!");
+      }).catch(err => {
+        alert("Kunde inte kopiera: " + err);
+      });
+    }
+  </script>
+</body>
+</html>

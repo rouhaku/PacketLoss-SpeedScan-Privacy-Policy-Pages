@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מדיניות פרטיות</title>
+  <style>
+    body {font-family: "Arial", sans-serif;max-width: 800px;margin: auto;padding: 2em;line-height: 1.8;background-color: #f9f9f9;direction: rtl;text-align: right;}
+    h1, h2 {color: #333;}
+    a {color: #0066cc;}
+    img.email-image {display: block;margin: 1em 0;max-width: 50%;height: auto;object-fit: contain;}
+    .copy-btn {background-color: #0066cc;color: #fff;padding: 0.5em 1em;border: none;cursor: pointer;border-radius: 4px;font-size: 0.9em;}
+    .copy-btn:active {background-color: #004999;}
+  </style>
+</head>
+<body>
+  <h1>מדיניות פרטיות</h1>
+
+  <p>האפליקציה "PacketLoss &amp; SpeedScan" עשויה לאסוף ולהשתמש במידע מסוים לצורך שיפור חוויית המשתמש והצגת פרסומות.</p>
+
+  <h2>1. מידע שנאסף</h2>
+  <ul>
+    <li>נתוני שימוש באפליקציה (מספר הפעלות, יומני שגיאות וכו')</li>
+    <li>כתובת IP (מוצגת רק לאבחון ונשמרת רק במכשיר)</li>
+    <li>מזהה פרסום (IDFA)</li>
+  </ul>
+
+  <h2>2. מטרות השימוש</h2>
+  <ul>
+    <li>ניתוח והצגת איכות התקשורת</li>
+    <li>הצגת פרסומות (באמצעות Google AdMob)</li>
+    <li>ניתוח קריסות ובעיות טכניות</li>
+  </ul>
+
+  <h2>3. העברת מידע לגורמי צד שלישי</h2>
+  <p>האפליקציה משתמשת בשירותים החיצוניים הבאים:</p>
+  <ul>
+    <li>Google AdMob (פרסום)</li>
+    <li>Cloudflare (בדיקות מהירות)</li>
+  </ul>
+
+  <h2>4. הרשאת מעקב</h2>
+  <p>בזמן פתיחת האפליקציה עשויה להופיע בקשת הרשאה למעקב לצורך הצגת פרסומות. אם לא תינתן הרשאה, לא יוצגו פרסומות מותאמות אישית.</p>
+
+  <h2>5. יצירת קשר</h2>
+  <p>לפניות, אנא השתמשו בטופס הבא:</p>
+  <p><a href="https://forms.gle/yrWqyzYeEUcYBPKVA">טופס פנייה</a></p>
+  <p>לפניות בנושאי פרטיות, אנא שלחו דוא"ל לכתובת שלמטה:</p>
+  <img src="images/img1.png" alt="תמונת כתובת אימייל" class="email-image" />
+  <p>עודכן לאחרונה: 31 ביולי 2025</p>
+
+  <button class="copy-btn" onclick="copyPolicy()">העתק טקסט המדיניות</button>
+
+  <script>
+    function copyPolicy() {
+      const text = document.body.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("מדיניות הפרטיות הועתקה ללוח!");
+      }).catch(err => {
+        alert("ההעתקה נכשלה: " + err);
+      });
+    }
+  </script>
+</body>
+</html>
