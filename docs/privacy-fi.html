@@ -1,65 +1,27 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tietosuojakäytäntö</title>
-  <style>
-    body {font-family: "Arial", sans-serif;max-width: 800px;margin: auto;padding: 2em;line-height: 1.6;background-color: #f9f9f9;}
-    h1, h2 {color: #333;}
-    a {color: #0066cc;}
-    img.email-image {display: block;margin: 1em 0;max-width: 50%;height: auto;object-fit: contain;}
-    .copy-btn {background-color: #0066cc;color: #fff;padding: 0.5em 1em;border: none;cursor: pointer;border-radius: 4px;font-size: 0.9em;}
-    .copy-btn:active {background-color: #004999;}
-  </style>
-</head>
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Tietosuojakäytäntö</title>
+<style>body { font-family: "Arial", sans-serif; max-width: 800px; margin: auto; padding: 2em; line-height: 1.6; background-color: #f9f9f9; } h1, h2 { color: #333; } a { color: #0066cc; } img.email-image { display: block; margin: 1em 0; max-width: 50%; height: auto; }</style></head>
 <body>
-  <h1>Tietosuojakäytäntö</h1>
-
-  <p>Tämä sovellus, "PacketLoss &amp; SpeedScan", voi kerätä ja käyttää tiettyjä tietoja seuraaviin tarkoituksiin käyttäjäkokemuksen parantamiseksi ja mainosten näyttämiseksi.</p>
-
-  <h2>1. Kerättävät tiedot</h2>
-  <ul>
-    <li>Sovelluksen käyttötiedot (käynnistyskerrat, virhelokit jne.)</li>
-    <li>IP-osoite (näkyy vain diagnostiikkaan ja tallennetaan vain laitteelle)</li>
-    <li>Mainostunniste (IDFA)</li>
-  </ul>
-
-  <h2>2. Käytön tarkoitus</h2>
-  <ul>
-    <li>Viestinnän laadun analysointi ja näyttäminen</li>
-    <li>Mainosten näyttäminen (käyttäen Google AdMobia)</li>
-    <li>Sovelluksen kaatumisten ja muiden ongelmien analysointi</li>
-  </ul>
-
-  <h2>3. Tietojen ulkoinen siirto</h2>
-  <p>Tämä sovellus käyttää seuraavia ulkoisia palveluja:</p>
-  <ul>
-    <li>Google AdMob (mainonta)</li>
-    <li>Cloudflare (nopeusdiagnostiikka)</li>
-  </ul>
-
-  <h2>4. Seurantalupa</h2>
-  <p>Mainosten näyttämiseksi sovelluksen käynnistyessä voi näkyä seurantalupaponnahdusikkuna. Ellei käyttäjä anna lupaa, personoituja mainoksia ei näytetä.</p>
-
-  <h2>5. Yhteystiedot</h2>
-  <p>Kyselyjä varten, käytä seuraavaa lomaketta:</p>
-  <p><a href="https://forms.gle/yrWqyzYeEUcYBPKVA">Yhteydenottolomake</a></p>
-  <p>Tietosuojaan liittyvissä kysymyksissä, ota yhteyttä alla olevaan sähköpostiosoitteeseen:</p>
-  <img src="images/img1.png" alt="Sähköpostiosoite kuva" class="email-image" />
-  <p>Päivitetty: 31. heinäkuuta 2025</p>
-
-  <button class="copy-btn" onclick="copyPolicy()">Kopioi käytännön teksti</button>
-
-  <script>
-    function copyPolicy() {
-      const text = document.body.innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        alert("Tietosuojakäytäntö kopioitu leikepöydälle!");
-      }).catch(err => {
-        alert("Kopiointi epäonnistui: " + err);
-      });
-    }
-  </script>
-</body>
-</html>
+<h1>Tietosuojakäytäntö</h1>
+<p>Tämä sovellus "PacketLoss & SpeedScan" saattaa kerätä ja käyttää tiettyjä tietoja käyttökokemuksen parantamiseksi ja mainosten näyttämiseksi.</p>
+<h2>1. Kerättävät tiedot</h2>
+<ul><li>Sovelluksen käyttötiedot (käynnistysmäärät, virhelokit jne.)</li><li>IP-osoite (näytetään vain diagnostiikkatarkoituksiin ja tallennetaan vain laitteellesi)</li><li>Mainostunniste (IDFA)</li></ul>
+<h2>2. Käyttötarkoitus</h2>
+<ul><li>Verkon laadun analysointi ja näyttäminen</li><li>Mainosten näyttäminen (Google AdMob)</li><li>Kaatumis- ja virheanalyysi</li></ul>
+<h2>3. Ulkoinen tiedonsiirto</h2>
+<p>Tämä sovellus käyttää seuraavia ulkoisia palveluita:</p>
+<ul><li>Google AdMob (mainonta)</li><li>Cloudflare (nopeustesti)</li></ul>
+<h2>4. Seurantalupa</h2>
+<p>Sovelluksen käynnistyessä saattaa ilmestyä seurantaluvan ponnahdusikkuna mainostarkoituksiin. Henkilökohtaisia mainoksia ei näytetä ilman käyttäjän lupaa.</p>
+<h2>5. VPN-toiminto ja pakettien kaappaus</h2>
+<p>Tämä sovellus käyttää paikallista VPN-tunnelia verkkodiagnostiikkaan. Tämä VPN ei kulje ulkoisten palvelimien kautta, ja kaikki käsittely tapahtuu laitteellasi.</p>
+<ul><li>Kaapatut pakettitiedot tallennetaan vain laitteellesi</li><li>Tietoja ei lähetetä ulkoisille palvelimille</li><li>HTTPS-salauksen purkutoimintoa käytettäessä CA-sertifikaatti asennetaan käyttäjän toimesta</li></ul>
+<h2>6. Tilaukset</h2>
+<p>Tämä sovellus tarjoaa sovelluksen sisäisiä ostoksia (tilauksia). Maksunkäsittely tapahtuu Applen App Store -maksujärjestelmän kautta, emmekä kerää tai tallenna maksutietoja (kuten luottokorttinumeroita).</p>
+<h2>7. Ota yhteyttä</h2>
+<p>Kysymyksissä käytä seuraavaa lomaketta:</p><p><a href="https://forms.gle/yrWqyzYeEUcYBPKVA">Yhteydenottolomake</a></p>
+<p>Tietosuojaan liittyvissä kysymyksissä ota yhteyttä seuraavaan sähköpostiosoitteeseen:</p>
+<img src="images/img1.png" alt="Sähköpostiosoitteen kuva" class="email-image" />
+<p>Viimeksi päivitetty: 12. joulukuuta 2025</p>
+</body></html>
